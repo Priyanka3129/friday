@@ -1,0 +1,36 @@
+<html>
+<head>
+	<title>Project</title>
+</head>
+<body>
+	<script>
+		function fun()
+		{
+			var flow=document.getElementsByName("flower");
+			var flower1=[];
+			for(var i=0;i<flow.length;i++)
+			{
+				if(flow[i].checked)
+				{
+					flower1[i]=flow[i].value;
+				}
+			}
+			for(var i=0;i<flower1.length;i++)
+			{
+				document.write(flower1[i]);
+				document.write("<br>");
+			}
+		}
+
+    </script>
+	<form>
+	<h1>Flower</h1>
+	<input type="checkbox" id="v1" name="flower" value="Rose"> ROSE<br>
+	<input type="checkbox" id="v2" name="flower" value="Jasmine"> JASMINE<br>
+	<input type="checkbox" id="v3" name="flower" value="LiLY"> LiLY<br>
+	<input type="checkbox" id="v4" name="flower" value="Sunflower"> SUNFLOWER <br>
+	<input type="button" value="click" onclick="fun()">
+	</form>
+	
+</body>
+</html>
